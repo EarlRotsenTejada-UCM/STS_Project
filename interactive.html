@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMO Interactive Hub - CTRL+ALT+DNA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/interactive.css">
+</head>
+<body>
+     <!-- Animated Background - SINGLE INSTANCE -->
+    <div class="dna-background">
+        <!-- DNA Double Helix -->
+        <div class="dna-helix">
+            <div class="helix-strand"></div>
+        </div>
+
+        <!-- Floating Molecules - SCIENCE -->
+        <div class="molecule">
+            <div class="molecule-atom" style="top: 0; left: 0;"></div>
+            <div class="molecule-atom" style="top: 0; right: 0;"></div>
+            <div class="molecule-atom" style="bottom: 0; left: 30px;"></div>
+            <div class="molecule-atom" style="bottom: 0; right: 30px;"></div>
+            <div class="molecule-bond" style="top: 10px; left: 10px; width: 60px; transform: rotate(0deg);"></div>
+            <div class="molecule-bond" style="top: 10px; left: 10px; width: 50px; transform: rotate(45deg);"></div>
+            <div class="molecule-bond" style="top: 10px; right: 10px; width: 50px; transform: rotate(-45deg);"></div>
+        </div>
+
+        <div class="molecule">
+            <div class="molecule-atom" style="top: 0; left: 0;"></div>
+            <div class="molecule-atom" style="top: 0; right: 0;"></div>
+            <div class="molecule-atom" style="bottom: 0; left: 30px;"></div>
+            <div class="molecule-atom" style="bottom: 0; right: 30px;"></div>
+            <div class="molecule-bond" style="top: 10px; left: 10px; width: 60px;"></div>
+            <div class="molecule-bond" style="bottom: 10px; left: 40px; width: 40px;"></div>
+        </div>
+
+        <div class="molecule">
+            <div class="molecule-atom" style="top: 10px; left: 30px;"></div>
+            <div class="molecule-atom" style="top: 50px; left: 0;"></div>
+            <div class="molecule-atom" style="top: 50px; right: 0;"></div>
+            <div class="molecule-bond" style="top: 20px; left: 15px; width: 30px; transform: rotate(-45deg);"></div>
+            <div class="molecule-bond" style="top: 20px; right: 15px; width: 30px; transform: rotate(45deg);"></div>
+        </div>
+
+        <div class="molecule">
+            <div class="molecule-atom" style="top: 0; left: 30px;"></div>
+            <div class="molecule-atom" style="bottom: 0; left: 0;"></div>
+            <div class="molecule-atom" style="bottom: 0; right: 0;"></div>
+            <div class="molecule-bond" style="top: 10px; left: 15px; width: 40px; transform: rotate(60deg);"></div>
+            <div class="molecule-bond" style="top: 10px; right: 15px; width: 40px; transform: rotate(-60deg);"></div>
+        </div>
+
+        <!-- Gene Sequences - SCIENCE -->
+        <div class="gene-sequence">ATCG-TAGC-CGTA-ATGC-GCTA-TACG-CGAT-GCTA • CRISPR • Gene Editing</div>
+        <div class="gene-sequence">GCTA-ATCG-TAGC-CGTA-GCTA-ATGC-TACG-ATCG • Biotechnology • DNA</div>
+        <div class="gene-sequence">TAGC-CGTA-ATGC-GCTA-TACG-CGAT-ATCG-TAGC • Genetic Engineering</div>
+
+        <!-- Cell Structures -->
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <!-- HEALTH Icons -->
+        <div class="health-icon"><i class="fas fa-heartbeat"></i></div>
+        <div class="health-icon"><i class="fas fa-pills"></i></div>
+        <div class="health-icon"><i class="fas fa-apple-alt"></i></div>
+
+        <!-- POLITICS Icons -->
+        <div class="politics-icon"><i class="fas fa-balance-scale"></i></div>
+        <div class="politics-icon"><i class="fas fa-gavel"></i></div>
+        <div class="politics-icon"><i class="fas fa-landmark"></i></div>
+
+        <!-- HEALTH Scrolling Text -->
+        <div class="health-text">• NUTRITION • SAFETY TESTING • ALLERGEN SCREENING • HEALTH IMPACT • VITAMIN ENHANCEMENT •</div>
+        <div class="health-text">• FOOD SECURITY • DIETARY BENEFITS • CLINICAL TRIALS • NUTRITIONAL VALUE •</div>
+
+        <!-- POLITICS Scrolling Text -->
+        <div class="politics-text">• REGULATIONS • FDA APPROVAL • LABELING LAWS • POLICY DEBATES • ETHICAL CONSIDERATIONS •</div>
+        <div class="politics-text">• INTERNATIONAL TRADE • CONSUMER RIGHTS • BIOSAFETY PROTOCOLS • LEGISLATION •</div>
+    </div>
+
+    <div class="dna-background">
+        <div class="floating-dna" style="top: 10%; left: 10%;">🧬</div>
+        <div class="floating-dna" style="top: 30%; right: 15%; animation-delay: 2s;">🧬</div>
+        <div class="floating-dna" style="bottom: 20%; left: 20%; animation-delay: 4s;">🧬</div>
+        <div class="floating-dna" style="top: 60%; right: 25%; animation-delay: 6s;">🧬</div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>CTRL+ALT+DNA</h1>
+            <nav>
+                <a href="index1.html">Home</a>
+                <a href="Explore.html">Explore</a>
+                <a href="interactive.html">Interactive Hub</a>
+                <a href="AboutUs1.html">About</a>
+                <a href="Quiz.html">Quiz</a>
+                <a href="Contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="tab-container">
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <div class="tab-button active" onclick="showTab('timeline')">
+                    <span class="tab-icon">🕰️</span>
+                    <div class="tab-title">Timeline</div>
+                </div>
+                <div class="tab-button" onclick="showTab('comparison')">
+                    <span class="tab-icon">🔄</span>
+                    <div class="tab-title">Before & After</div>
+                </div>
+                <div class="tab-button" onclick="showTab('cases')">
+                    <span class="tab-icon">📊</span>
+                    <div class="tab-title">Success Stories</div>
+                </div>
+                <div class="tab-button" onclick="showTab('myths')">
+                    <span class="tab-icon">🔍</span>
+                    <div class="tab-title">Myth Busters</div>
+                </div>
+                <div class="tab-button" onclick="showTab('contact')">
+                    <span class="tab-icon">💬</span>
+                    <div class="tab-title">Contact</div>
+                </div>
+            </div>
+
+            <!-- Timeline Content -->
+            <div id="timeline" class="tab-content active">
+                <div class="content-section">
+                    <h2>🕰️ GMO Evolution Timeline</h2>
+                    <table class="timeline-table">
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Milestone</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="timeline-year">1973</td>
+                                <td class="timeline-milestone">The Beginning</td>
+                                <td>Herbert Boyer and Stanley Cohen create the first genetically modified organism using recombinant DNA technology.</td>
+                            </tr>
+                            <tr>
+                                <td class="timeline-year">1982</td>
+                                <td class="timeline-milestone">Medical Breakthrough</td>
+                                <td>FDA approves the first GMO product: human insulin produced by genetically modified bacteria.</td>
+                            </tr>
+                            <tr>
+                                <td class="timeline-year">1994</td>
+                                <td class="timeline-milestone">First GMO Food</td>
+                                <td>Flavr Savr tomato becomes the first genetically modified food approved for commercial sale.</td>
+                            </tr>
+                            <tr>
+                                <td class="timeline-year">2000</td>
+                                <td class="timeline-milestone">Golden Rice</td>
+                                <td>Golden Rice, engineered to produce beta-carotene, is developed to combat vitamin A deficiency.</td>
+                            </tr>
+                            <tr>
+                                <td class="timeline-year">2015</td>
+                                <td class="timeline-milestone">CRISPR Revolution</td>
+                                <td>CRISPR gene-editing technology gains widespread adoption, making genetic modification more precise.</td>
+                            </tr>
+                            <tr>
+                                <td class="timeline-year">2025</td>
+                                <td class="timeline-milestone">Modern Era</td>
+                                <td>GMO crops grown on over 190 million hectares globally, addressing food security and climate challenges.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Comparison Content -->
+            <div id="comparison" class="tab-content">
+                <div class="content-section">
+                    <h2>🔄 Before & After: GMO Impact</h2>
+                    <p style="text-align: center; margin-bottom: 20px;">Drag the slider to compare traditional crops vs GMO crops</p>
+                    <div class="comparison-container" id="comparisonContainer">
+                        <div class="comparison-image before-image">
+                            <div>
+                                <div style="font-size: 0.5em; margin-bottom: 10px;">Traditional Crops</div>
+                                🌾 Lower Yield<br>
+                                🐛 Heavy Pesticide Use<br>
+                                💧 More Water Needed
+                            </div>
+                        </div>
+                        <div class="comparison-image after-image" id="afterImage">
+                            <div>
+                                <div style="font-size: 0.5em; margin-bottom: 10px;">GMO Crops</div>
+                                🌱 Higher Yield<br>
+                                ✨ Reduced Pesticides<br>
+                                💚 Water Efficient
+                            </div>
+                        </div>
+                        <div class="slider-handle" id="sliderHandle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Studies Content -->
+            <div id="cases" class="tab-content">
+                <div class="content-section">
+                    <h2>📊 Real-World Success Stories</h2>
+                    <div class="case-study-grid">
+                        <div class="case-study-card">
+                            <div class="case-icon">🌾</div>
+                            <div class="case-title">Golden Rice</div>
+                            <p><strong>Problem:</strong> Vitamin A deficiency affecting millions in developing countries</p>
+                            <p><strong>Solution:</strong> Rice engineered to produce beta-carotene</p>
+                            <p><strong>Impact:</strong> Potential to save 500,000+ children annually from blindness and death</p>
+                        </div>
+
+                        <div class="case-study-card">
+                            <div class="case-icon">🍎</div>
+                            <div class="case-title">Arctic Apples</div>
+                            <p><strong>Problem:</strong> Apples brown quickly after slicing, leading to food waste</p>
+                            <p><strong>Solution:</strong> Gene modification to prevent enzymatic browning</p>
+                            <p><strong>Impact:</strong> 40% reduction in apple waste, longer shelf life</p>
+                        </div>
+
+                        <div class="case-study-card">
+                            <div class="case-icon">🌱</div>
+                            <div class="case-title">Bt Cotton</div>
+                            <p><strong>Problem:</strong> Devastating pest damage and heavy pesticide use</p>
+                            <p><strong>Solution:</strong> Cotton with built-in pest resistance</p>
+                            <p><strong>Impact:</strong> 37% reduction in pesticide use, increased farmer income by 50%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Myths Content -->
+            <div id="myths" class="tab-content">
+                <div class="content-section">
+                    <h2>🔍 Myth Busters: Facts vs Fiction</h2>
+                    <div class="myth-cards">
+                        <div class="myth-card" onclick="toggleMyth(this)">
+                            <div class="myth-icon">❌</div>
+                            <div class="myth-title">Myth: GMOs Cause Cancer</div>
+                            <p>Click to reveal the truth...</p>
+                            <div class="myth-content">
+                                <p><strong>FACT:</strong> No credible scientific evidence links GMO consumption to cancer. The American Cancer Society, WHO, and numerous peer-reviewed studies confirm GMOs are safe.</p>
+                                <p><strong>Sources:</strong> American Cancer Society, WHO Food Safety, National Academy of Sciences</p>
+                            </div>
+                        </div>
+
+                        <div class="myth-card" onclick="toggleMyth(this)">
+                            <div class="myth-icon">🍽️</div>
+                            <div class="myth-title">Myth: GMOs Are Unsafe to Eat</div>
+                            <p>Click to reveal the truth...</p>
+                            <div class="myth-content">
+                                <p><strong>FACT:</strong> GMOs undergo rigorous safety testing - more than conventional foods. Over 3,000 scientific studies confirm their safety for human consumption.</p>
+                                <p><strong>Sources:</strong> FDA, European Commission, American Medical Association</p>
+                            </div>
+                        </div>
+
+                        <div class="myth-card" onclick="toggleMyth(this)">
+                            <div class="myth-icon">🌱</div>
+                            <div class="myth-title">Myth: GMOs Harm the Environment</div>
+                            <p>Click to reveal the truth...</p>
+                            <div class="myth-content">
+                                <p><strong>FACT:</strong> GMO crops have reduced pesticide use by 37% and increased crop yields by 22%, reducing the need for deforestation. They also help conserve soil and water.</p>
+                                <p><strong>Sources:</strong> PLOS ONE Meta-Analysis, USDA Environmental Impact Studies</p>
+                            </div>
+                        </div>
+
+                        <div class="myth-card" onclick="toggleMyth(this)">
+                            <div class="myth-icon">👥</div>
+                            <div class="myth-title">Myth: GMOs Only Benefit Big Corporations</div>
+                            <p>Click to reveal the truth...</p>
+                            <div class="myth-content">
+                                <p><strong>FACT:</strong> Small-scale farmers in developing countries have seen income increases of 50-68% from GMO crops like Bt cotton. GMOs help combat food insecurity globally.</p>
+                                <p><strong>Sources:</strong> FAO Reports, World Bank Agricultural Studies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Content -->
+            <div id="contact" class="tab-content">
+                <div class="content-section">
+                    <h2>💬 Contact Us</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/interactive.js"></script>
+</body>
+</html>
